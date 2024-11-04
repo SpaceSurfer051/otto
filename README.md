@@ -19,7 +19,7 @@
 |**CI/CD**|github action, lambda|
 
 ## Infra Architecture
-<img src="https://github.com/SpaceSurfer051/otto/tree/develop/img/aws_infra.png" width="700" height="400"/> 
+<img src="https://github.com/SpaceSurfer051/otto/blob/develop/img/aws_infra.png" width="700" height="400"/> 
 
 - ROUTE 53을 통해 도메인 등록
 - ACM에서 인증서 등록하여 로드밸런서(ALB)를 통해 이름 기반으로 접속
@@ -27,14 +27,14 @@
   - 프라이빗의 내부 접속은 퍼블릭의 bastion host를 통해서만 접속 가능
 
 ## Django Architecture
-<img src="https://github.com/SpaceSurfer051/otto/tree/develop/img/django.png" width="700" height="400"/> 
+<img src="https://github.com/SpaceSurfer051/otto/blob/develop/img/django.png" width="700" height="400"/> 
 
 - 개발 환경과 프로덕션 환경을 분리해서 운영
 - 편의성과 보안을 위해 로컬에서 ssh 터널링을 통해서만 RDS 접속 가능
 
 ## Airflow Architecture
-<img src="https://github.com/SpaceSurfer051/otto/tree/develop/img/airflow_inside.png" width="600" height="300"/> 
-<img src="https://github.com/SpaceSurfer051/otto/tree/develop/img/airflow_cicd.png" width="600" height="200"/> 
+<img src="https://github.com/SpaceSurfer051/otto/blob/develop/img/airflow_inside.png" width="600" height="300"/> 
+<img src="https://github.com/SpaceSurfer051/otto/blob/develop/img/airflow_cicd.png" width="600" height="200"/> 
 
 - webserver 와 worker 노드를 각각의 다른 EC2에 두어 분산 시스템 구현
 - github action과 람다를 통해 CI/CD 환경 구축
@@ -43,7 +43,7 @@
  
 ## ML
 ### Model
-<img src="https://github.com/SpaceSurfer051/otto/tree/develop/img/ml_model.png" width="700" height="400"/> 
+<img src="https://github.com/SpaceSurfer051/otto/blob/develop/img/ml_model.png" width="700" height="400"/> 
 
 선정된 모델 : XGBoost
 
@@ -55,7 +55,7 @@
   - **과적합 방지**: XGBoost는 정규화와 조기 종료 기능을 통해 과적합을 방지할 수 있는 기법을 제공
 
 ### Pipeline
-<img src="https://github.com/SpaceSurfer051/otto/tree/develop/img/ml_pipeline.png" width="700" height="400"/> 
+<img src="https://github.com/SpaceSurfer051/otto/blob/develop/img/ml_pipeline.png" width="700" height="400"/> 
 
 - Django와 XGBoost 모델을 각각 다른 EC2 인스턴스에서 운영함으로써 서버 부하 최소화
 - FastAPI를 사용하여 Django와 API 통신 환경 구축
