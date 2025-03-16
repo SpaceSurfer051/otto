@@ -6,6 +6,8 @@
 ## 목표
 사용자에게 키와 몸무게 데이터를 받아 의류 쇼핑몰의 순위권의 제품을 리뷰 기반으로 사이즈를 추천
 
+airflow 파트 레포지토리: https://github.com/SpaceSurfer051/otto-airflow
+
 ## skills 
 |**skill**|detail|
 |--|--|
